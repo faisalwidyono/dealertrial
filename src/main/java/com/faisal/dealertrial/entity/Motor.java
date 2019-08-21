@@ -13,17 +13,18 @@ import lombok.Getter;
 
 @Data
 @Entity
-@Getter
-@Setter
 @Table(name = "motor")
 public class Motor {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
 	@Column(nullable = false)
 	private String name;
+	
 	private String tipe;
+	
 	private String jenis;
 
 }
